@@ -1,14 +1,16 @@
 // Questão 2
 #include <iostream> // cin, cout, endl
+using namespace std;
+
 // Função principal
 int main()
 {
     // Declaração de variaveis
     int i1 = 0, i2 = 0, i3 = 0, i4 = 0, total = 0, num;
     // Mostra a mensagem pro usuario
-    std::cout << "Entre com valores inteiros (Ctrl+d p/ encerrar): " << std::endl;
+    cout << "Entre com valores inteiros (Ctrl+d p/ encerrar): " << endl;
     // Enquanto o usuario nao apertar o crtl+d ler numeros
-    while (std::cin >> num)
+    while (cin >> num)
     {
         if(num >= 0 && num < 25){
             i1++;
@@ -23,8 +25,8 @@ int main()
         total++;        
     }
     // Exibir a porcentagem para os intervalos solicitados.
-    std::cout << "[0, 25): " << (i1*100)/(float)total << "%" <<
-                "\n[25, 50): " << (i2*100)/(float)total << "%" <<
-                "\n[50, 75): " << (i3*100)/(float)total << "%" <<
-                "\n[75, 100]: " << (i4*100)/(float)total << "%" << std::endl;
+    cout << "[0, 25): " << (i1*100)/(float)total << "%" <<
+        "\n[25, 50): " << (i2*100)/(float)total << "%" <<
+        "\n[50, 75): " << (i3*100)/(float)total << "%" <<
+        "\n[75, 100]: " << (i4*100)/(float)total << "%" << endl;
 }
