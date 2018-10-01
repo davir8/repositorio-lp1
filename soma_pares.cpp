@@ -1,21 +1,23 @@
 // Questão 3
 #include <iostream> // cin, cout, endl
+using namespace std;
+
 // Função principal
 int main()
 {
     // Declaração de variaveis
     int num, qtd, soma = 0;
     // Mostra a mensagem pro usuario
-    std::cout << "Entre com valores inteiros (Ctrl+d p/ encerrar): " << std::endl;
+    cout << "Entre com valores inteiros (Ctrl+d p/ encerrar): " << endl;
     // Enquanto o usuario nao apertar o crtl+d ler numeros
-    while (std::cin >> num >> qtd)
+    while (cin >> num >> qtd)
     {
         for (int i(0u); i < qtd; i++)
         {
             soma += num+i;
         }
         // Mostra a soma dos qtd inteiros a partir de num 
-        std::cout << soma << std::endl;
+        cout << soma << endl;
         soma = 0;
     }
 }

@@ -1,22 +1,24 @@
 // Questão 4
 #include <iostream> // cin, cout, endl
+using namespace std;
+
 // Função principal
 int main()
 {
     // Declaração de variaveis
     int n, f = 1, f1 = 1, f2 = 1;
     // Mostra a mensagem pro usuario
-    std::cout << "Entre com um valor: " << std::endl;
+    cout << "Entre com um valor: " << endl;
     // Solicita um numero do usuario
-    std::cin >> n;
+    cin >> n;
     // Enquanto a sequencia for menor que n, executa
     while(f < n)
     {
         // Mostra cada numero da sequencia
-        std::cout << f << " ";
+        cout << f << " ";
         // Mostra o numero 1 pela segunda vez
         if(f == 1){
-            std::cout << f << " ";
+            cout << f << " ";
         }
         // f recebe a soma dos dois ultimos numeros
         f = f1+f2;
@@ -26,6 +28,6 @@ int main()
         f1 = f;
     }
     // Quebra a linha
-    std::cout << std::endl;
+    cout << endl;
     return 0;
 }
